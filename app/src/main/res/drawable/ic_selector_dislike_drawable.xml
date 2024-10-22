@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_select_dislike" android:state_checked="true" />
+    <item>
+        <bitmap android:src="@drawable/ic_select_dislike" android:alpha="0.5"/>
+    </item>
+</selector>

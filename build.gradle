@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.versions = [:]
+    versions.compileSdk = 33
+    versions.minSdk = 21
+    versions.targetSdk = 33
+    versions.coreKtx = '1.8.0'
+    versions.materialDesign = '1.6.1'
+    versions.activityKtx = '1.6.0-alpha05'
+    versions.fragmentKtx = '1.4.1'
+    versions.constraintLayout = '2.1.4'
+    versions.kotlinxCoroutines = '1.6.0'
+    versions.lifecycleExtensions = '2.2.0'
+    versions.lifecycleRuntimeKtx = '2.4.1'
+    versions.lifecycleLivedataKtx = '2.5.0'
+    versions.lifecycleViewmodelKtx = '2.4.1'
+    versions.glide = '4.12.0'
+    versions.preferenceKtx = '1.2.0'
+    versions.retrofit = '2.9.0'
+    versions.okhttp3 = '4.9.2'
+    versions.navigation = '2.4.2'
+    versions.hiltDI = '2.42'
+    versions.sdp = '1.0.6'
+    versions.ssp = '1.0.6'
+    versions.crashlyticsClassPath = '2.9.0'
+    versions.gradleClassPath = '7.1.3'
+    versions.jetbrainsClassPath = '1.7.0'
+    versions.libPhoneNumber = '8.12.54'
+    versions.autoImageSlider = '1.4.0'
+    versions.imagePicker = '2.8.0'
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.1'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.2.1' apply false
+    id 'com.android.library' version '7.2.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.0' apply false
+    id 'org.jetbrains.kotlin.jvm' version '1.7.0' apply false
+    id 'com.google.dagger.hilt.android' version '2.42' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

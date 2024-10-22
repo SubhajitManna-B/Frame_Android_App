@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ovaku.ui.main.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/likeFragment"
+        android:name="com.ovaku.ui.main.like.LikeFragment"
+        android:label="Like"
+        tools:layout="@layout/fragment_like" />
+
+    <fragment
+        android:id="@+id/dislikeFragment"
+        android:name="com.ovaku.ui.main.dislike.DislikeFragment"
+        android:label="Dislike"
+        tools:layout="@layout/fragment_dislike" />
+
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.ovaku.ui.main.favourite.FavouriteFragment"
+        android:label="Favourite"
+        tools:layout="@layout/fragment_favourite" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ovaku.ui.main.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
